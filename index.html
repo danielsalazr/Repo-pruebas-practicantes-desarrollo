@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio para practicantes</title>
+
+    <style>
+        @keyframes moviendrew {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(20px);
+            }
+        }
+
+        #flecha {
+            animation-name: moviendrew;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;	
+            font-size: 100px;
+            rotate: 180deg;
+            text-align: center;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .blinking-hr {
+            width: 100%;
+            border: none;
+            height: 2px;
+            background: black;
+            animation: fadeInOut 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>proyecto de Pruebas para aprender Git</h1>
+
+    <p 
+        style="width: 60%; 
+            text-align: justify; 
+            margin: 0 auto; 
+            font-size: 2rem; 
+            border: 1px solid #000000;
+            padding: 16px; 
+            border-radius: 10px;
+
+
+        "
+    >
+        Este es un repositorio creado para que los practicantes aprendan las bases del trabajo colaborativo: el objetivo es hacer una contribucion al proyecto, doy libertad de realizar el aporte que se desee, un formulario, parrafos, tablas, listas con o sin estilos en CSS, el limite es la imaginacion, al final el objetico es aprender a utilizar las ramas de git para hacer trabajo colaborativo y hacer un pull request:
+    </p>
+
+    <p style="margin: 28px auto 28px auto; width: 40%; color: red; font-size: 1.5rem; text-align: center;" >Realiza tu aporte a partir de aqui ⬇︎:</p>
+    <div id="flecha">&#11014;</div>
+    <hr class="blinking-hr">
+
+    <p>Inicia aqui, empecemos borrando este parrafo y anadiendo contenido</p>
+    
+</body>
+</html>
