@@ -37,6 +37,77 @@
             background: black;
             animation: fadeInOut 2s infinite;
         }
+        
+        .contain-inicio{
+            display: flex;
+            padding: 1rem;
+        }
+        .imagenInicio{
+            width: 70%;
+            border-radius: 20rem;
+        }
+        .imagen{
+            text-align: center;
+        }
+        .formulario{
+            width: 80%;
+            border: 1px solid gray; 
+            border-radius: 10px;  
+        }
+        form{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 1rem;
+        gap: 1rem;
+
+        }
+        button{
+        width: 10%;
+        background-color: rgb(244, 175, 45);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 4rem;
+     
+
+        }
+        input,select{
+            padding: 0.7rem;
+            background-color: #dddbdb;
+            border: none;
+        }
+        label{
+            font-size: 0.8rem;
+            color: rgb(148, 142, 142);
+        }
+        
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 1rem;
+        }
+        .card{
+            padding: 1rem;
+            text-align: center;
+            width: 90%;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden; 
+        }
+        .perrito{
+            width: 40%;
+            transition: transform 0.3s ease;
+        }
+
+        .perrito:hover{
+            transform: scale(1.2); 
+        }
+
+        .info{
+            text-align: justify;
+            margin: 0.5rem 1rem;
+        }
+
     </style>
 </head>
 <body>
@@ -61,7 +132,52 @@
     <div id="flecha">&#11014;</div>
     <hr class="blinking-hr">
 
-    <p>Inicia aqui, empecemos borrando este parrafo y anadiendo contenido</p>
+
+   <div class="contain-inicio">
+    <div class="imagen">
+        <img  class="imagenInicio" src="https://content.nationalgeographic.com.es/medio/2023/12/29/ojos-perros-3_433a79bd_231229224215_800x800.jpg">
+    </div>
+    <div class="formulario">
+        <form>
+            <label>Ingresa el nombre de tu mascota:</label>
+            <input type="text" id="petName" name="petName" required>
+            
+            <label>Ingresa la edad de tu mascota:</label>
+            <input type="number" id="petAge" name="petAge" min="0" required>
+
+            <label>Selecciona el género de tu mascota:</label>
+            <select required>
+                <option>Selecciona una opción</option>
+                <option>Hembra</option>
+                <option>Macho</option>
+            </select>
+
+            <label>Ingresa el nombre del cuidador:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <button type="submit">Enviar</button>
+     </form>
+
+    </div>
+   </div> 
+
+    <div class="contenedor">
+        <div class="card">
+            <img  class="perrito" src="https://www.purina.es/sites/default/files/styles/ttt_image_original/public/2024-02/Beagle.webp?itok=V_Kuyrez">
+            <h1>Beagle</h1>
+            <p class="info">Estos perros robustos y atrevidos son afables, además de compactos y atléticos. Tienen un pelaje corto, denso, resistente a las inclemencias del clima y se presenta en varios colores y patrones. Miden de 33 a 40 cm y pesan de 10 o 11 kg.</p>
+        </div>
+        <div class="card">
+            <img class="perrito" src="https://www.purina.es/sites/default/files/styles/ttt_image_original/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-07Bichon-Frise.webp?itok=4aWzF9Vy">
+            <h1>Bichón Frisé</h1>
+            <p class="info">Son perros pequeños y sólidos, además de equilibrados y con un aspecto inteligente. Los ojos y el hocico tienen un color negro intenso que contrasta con el pelaje blanco como la nieve y la cola que se curva sobre el lomo y parece una pluma. El pelaje es sedoso y rizado y les da la apariencia de borlas. Los machos y las hembras adultos miden entre 23 y 28 cm y pesan de 3 a 6 kg.</p>
+        </div>
+        <div class="card">
+            <img class="perrito" src="https://www.purina.es/sites/default/files/styles/ttt_image_original/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-07Bulldog.webp?itok=ij-AGtO3">
+            <h1>BullDog</h1>
+            <p class="info">El Bulldog tiene un cuerpo corto y fornido y una piel bastante holgada, sobre todo en la cabeza, el cuello y los omóplatos. Otra característica distintiva es su cráneo de gran tamaño. El Bulldog puede ser blanco, atigrado, beis o tener tonos rojizos con cualquiera de los colores anteriores. El adulto mide de 31 a 36 cm y pesa de 23 a 25 kg.</p>
+        </div>
+    </div>
     
 </body>
 </html>
